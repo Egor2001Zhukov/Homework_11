@@ -27,4 +27,4 @@ def page_skills(skill_name):
     return render_template('skills.html', candidates=get_candidates_by_skill(data, skill_name), skill_name=skill_name)
 
 
-app.run()
+app.run(debug=True)
